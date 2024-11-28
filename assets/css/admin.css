@@ -1,0 +1,120 @@
+/* PUDO Admin Styles */
+
+/* Settings Page */
+.pudo-settings-page .form-table th {
+  padding: 20px 10px;
+}
+
+.pudo-settings-page .form-table td {
+  padding: 15px 10px;
+}
+
+/* Shipping Label Meta Box */
+#pudo-shipping-label .inside {
+  margin: 0;
+  padding: 12px;
+}
+
+.pudo-label-container {
+  margin-bottom: 15px;
+}
+
+.pudo-shipping-label {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  margin: 10px 0;
+  font-family: monospace;
+  line-height: 1.5;
+}
+
+.pudo-shipping-label hr {
+  border: none;
+  border-top: 1px dashed #ddd;
+  margin: 15px 0;
+}
+
+/* Tracking Information */
+.pudo-tracking-info {
+  margin: 15px 0;
+}
+
+.pudo-tracking-info h4 {
+  margin: 0 0 10px;
+}
+
+.pudo-status-history {
+  margin-top: 20px;
+}
+
+.pudo-status-history table {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.pudo-status-history th,
+.pudo-status-history td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.pudo-status-history th {
+  background: #f8f8f8;
+}
+
+/* Print Styles */
+@media print {
+  #adminmenumain,
+  #wpadminbar,
+  #screen-meta,
+  #screen-meta-links,
+  .button,
+  #wpfooter {
+    display: none !important;
+  }
+
+  .pudo-shipping-label {
+    border: none;
+    padding: 0;
+  }
+
+  #wpcontent {
+    margin-left: 0 !important;
+  }
+
+  .wrap {
+    margin: 0 !important;
+  }
+}
+
+/* Notice Styles */
+#pudo-label-message {
+  margin: 10px 0;
+}
+
+#pudo-label-message .notice {
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+
+/* Button Styles */
+.pudo-label-container .button {
+  margin: 5px 0;
+}
+
+/* Status Colors */
+.pudo-status-reg {
+  color: #f0ad4e;
+}
+.pudo-status-arr {
+  color: #5bc0de;
+}
+.pudo-status-del {
+  color: #5cb85c;
+}
+.pudo-status-ret {
+  color: #d9534f;
+}

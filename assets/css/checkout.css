@@ -1,0 +1,144 @@
+/* PUDO Checkout Styles */
+
+/* PUDO Point Selector Container */
+.pudo-point-selector {
+  margin: 15px 0;
+  padding: 10px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Loading State */
+#pudo-points-loading {
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+/* PUDO Points List */
+#pudo-points-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+/* Individual PUDO Point */
+.pudo-point {
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.pudo-point:last-child {
+  margin-bottom: 0;
+}
+
+.pudo-point:hover {
+  border-color: #bbb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Radio Button Styling */
+.pudo-point input[type='radio'] {
+  margin-right: 8px;
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+.pudo-point label {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.4;
+  margin: 0;
+  width: calc(100% - 25px);
+}
+
+/* PUDO Point Details */
+.pudo-point strong {
+  display: block;
+  color: #2c3338;
+  margin-bottom: 3px;
+}
+
+.pudo-point small {
+  display: block;
+  color: #666;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Selected State */
+.pudo-point input[type='radio']:checked + strong {
+  color: #2271b1;
+}
+
+.pudo-point input[type='radio']:checked + label {
+  font-weight: 500;
+}
+
+/* Error Messages */
+#pudo-points-list .woocommerce-error {
+  margin: 0;
+  padding: 10px 15px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 3px;
+  color: #721c24;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .pudo-point-selector {
+    margin: 10px -10px;
+    border-radius: 0;
+  }
+
+  .pudo-point {
+    padding: 10px;
+  }
+
+  #pudo-points-list {
+    max-height: 250px;
+  }
+}
+
+/* Tracking Information on Order Details */
+.pudo-tracking-info {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.woocommerce-table.pudo-tracking-info {
+  margin-bottom: 30px;
+}
+
+.woocommerce-table.pudo-tracking-info th {
+  padding: 12px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.woocommerce-table.pudo-tracking-info td {
+  padding: 12px;
+}
+
+/* Print Styles */
+@media print {
+  .pudo-point-selector {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pudo-point {
+    page-break-inside: avoid;
+  }
+}
